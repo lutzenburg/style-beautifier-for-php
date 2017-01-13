@@ -2,13 +2,11 @@ import re
 import sys
 
 
-# fileToParse = None
-# if len(sys.argv) < 2:
-#     fileToParse = input('Enter file you wish to parse: ')
-# else:
-#     fileToParse = sys.argv[1]
-
-fileToParse = '.\Lib\RateLimits.php'
+fileToParse = None
+if len(sys.argv) < 2:
+    fileToParse = input('Enter file you wish to parse: ')
+else:
+    fileToParse = sys.argv[1]
 
 f = open(fileToParse, 'r+')
 content = f.read()
